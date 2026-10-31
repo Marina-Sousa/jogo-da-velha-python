@@ -53,3 +53,21 @@ print("Placar Final:")
 print("Jogador X:", vitorias_jogador_x)
 print("Jogador O:", vitorias_jogador_o)
 print("Empates:", total_empates)
+
+# Estatísticas da sessão (total de partidas, vitórias, empates e porcentagens)
+total_partidas = vitorias_jogador_x + vitorias_jogador_o + total_empates
+
+if total_partidas > 0:
+    porcentagem_x = (vitorias_jogador_x / total_partidas) * 100
+    porcentagem_o = (vitorias_jogador_o / total_partidas) * 100
+    porcentagem_empates = (total_empates / total_partidas) * 100
+else:
+    porcentagem_x = 0.0
+    porcentagem_o = 0.0
+    porcentagem_empates = 0.0
+
+print("--- Estatisticas da Sessao ---")
+print("Total de partidas:", total_partidas)
+print("Vitorias do Jogador X:", vitorias_jogador_x, "-", porcentagem_x, "%")
+print("Vitorias do Jogador O:", vitorias_jogador_o, "-", porcentagem_o, "%")
+print("Empates:", total_empates, "-", porcentagem_empates, "%")
