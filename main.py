@@ -86,4 +86,37 @@ while rodando:
         rodando = False
 
 
+#DIA 3 
+
+    if opcao == 1:
+        jogarNovamente = True
+        while jogarNovamente:
+            # Reinício da partida: limpa a matriz com for aninhado
+            for i in range(3):                  # percorre as linhas
+                for j in range(3):              # percorre as colunas de cada linha
+                    tabuleiro[i][j] = " "
+            print("[TESTE] matriz depois de limpar:", tabuleiro)   # remover depois!!!!!
+
+            print("")
+            print("--- PARTIDA ---")
+            # (aqui continua o bloco de exibição do tabuleiro, igual ao anterior,
+            #  só com mais um nível de recuo)
+
+            # AQUI entrarão as jogadas da partida (feitas pelos outros integrantes)
+            tabuleiro[1][1] = "X"               # TEMPORÁRIO: só para provar que a limpeza funciona
+            print("[TESTE] matriz depois de marcar:", tabuleiro)    # remover depois
+
+            # Jogar novamente? (repete até responder s ou n)
+            respostaValida = False
+            while respostaValida == False:
+                resposta = input("Jogar novamente? (s/n): ")
+                if resposta == "s" or resposta == "S":
+                    respostaValida = True
+                    jogarNovamente = True
+                elif resposta == "n" or resposta == "N":
+                    respostaValida = True
+                    jogarNovamente = False
+                else:
+                    print("Entrada inválida! Digite s ou n.")
+
 
