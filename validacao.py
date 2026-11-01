@@ -6,7 +6,7 @@ tabuleiro = [
 ]
 simbolo_atual = "X"
 
-# === DIA 2 - COMMIT 2: Validação contra Letras e Símbolos ===
+# === DIA 3 - COMMIT 3: Melhora a mensagem de erro ao usuário ===
 
 # Validação da Linha
 linha_valida = False
@@ -17,7 +17,7 @@ while linha_valida == False:
             linha_valida = True
             linha = n - 1  # Converte para índice da matriz (0, 1 ou 2)
     if linha_valida == False:
-        print("Entrada inválida! Digite apenas os números 1, 2 ou 3.")
+        print("Fora do limite do tabuleiro! Digite um número válido entre 1 e 3.")
 
 # Validação da Coluna
 coluna_valida = False
@@ -28,7 +28,7 @@ while coluna_valida == False:
             coluna_valida = True
             coluna = n - 1  # Converte para índice da matriz (0, 1 ou 2)
     if coluna_valida == False:
-        print("Entrada inválida! Digite apenas os números 1, 2 ou 3.")
+        print("Fora do limite do tabuleiro! Digite um número válido entre 1 e 3.")
 
-print("Linha válida escolhida (índice):", linha)
-print("Coluna válida escolhida (índice):", coluna)
+print("Linha válida escolhida:", linha)
+print("Coluna válida escolhida:", coluna)
