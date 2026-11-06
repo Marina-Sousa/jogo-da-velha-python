@@ -21,9 +21,9 @@ for i in range(3):                      # percorre cada linha
 
 
         # Placar acumulado entre as partidas
-    vitoriasX = 0
-    vitoriasO = 0
-    empates = 0
+vitoriasX = 0
+vitoriasO = 0
+empates = 0
 
 
 # MENU PRINCIPAL (Dia 2)
@@ -64,7 +64,6 @@ while rodando:
             print(linhaTexto)
             if i < 2:
                 print("   ---+---+---")
-        print("(As jogadas serão implementadas nos próximos commits)")   #REALIZAR A ALTERAÇÃO POSTERIORMENTE AO DAR MERGE NOS CÓDIGOS
     elif opcao == 2:
         print("")
         print("=== REGRAS ===")
@@ -109,7 +108,6 @@ while rodando:
             for i in range(3):                  # percorre as linhas
                 for j in range(3):              # percorre as colunas de cada linha
                     tabuleiro[i][j] = " "
-            print("[TESTE] matriz depois de limpar:", tabuleiro)   # remover depois!!!!!
 
             print("")
             print("--- PARTIDA ---")
