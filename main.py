@@ -50,20 +50,8 @@ while rodando:
 
 
 # Redireciona o jogador conforme a opção escolhida
-    if opcao == 1:
-        print("")
-        print("--- PARTIDA ---")
-        # Exibe o tabuleiro com os números das linhas e colunas visíveis
-        print("    1   2   3")
-        for i in range(3):                      # percorre cada linha
-            linhaTexto = str(i + 1) + "  "
-            for j in range(3):                  # percorre cada coluna da linha
-                linhaTexto = linhaTexto + " " + tabuleiro[i][j] + " "
-                if j < 2:
-                    linhaTexto = linhaTexto + "|"
-            print(linhaTexto)
-            if i < 2:
-                print("   ---+---+---")
+    if opcao == 1:       
+            pass  # a partida é tratada no bloco do Dia 3, mais abaixo
     elif opcao == 2:
         print("")
         print("=== REGRAS ===")
@@ -108,11 +96,19 @@ while rodando:
             for i in range(3):                  # percorre as linhas
                 for j in range(3):              # percorre as colunas de cada linha
                     tabuleiro[i][j] = " "
-
-            print("")
             print("--- PARTIDA ---")
-            # (aqui continua o bloco de exibição do tabuleiro, igual ao anterior,
-            #  só com mais um nível de recuo)
+            # Exibe o tabuleiro vazio no início da partida
+            print("    1   2   3")
+            for i in range(3):
+                linhaTexto = str(i + 1) + "  "
+                for j in range(3):
+                    linhaTexto = linhaTexto + " " + tabuleiro[i][j] + " "
+                    if j < 2:
+                        linhaTexto = linhaTexto + "|"
+                print(linhaTexto)
+                if i < 2:
+                    print("   ---+---+---")
+    
 
             # Lógica de turnos e jogadas (adaptada do validacao.py)
             simbolo_atual = "X"
