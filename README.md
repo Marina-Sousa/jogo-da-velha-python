@@ -43,11 +43,12 @@ O desenvolvimento do projeto foi distribuído entre três colaboradoras da segui
 ---
 
 ## 🧠 Arquitetura e Fluxo do Código
+```text
 ┌─────────────────────────────────────────────────────────────┐
 │                    MENU PRINCIPAL (while)                   │
 │                     (Marina Alencar)                        │
 │                                                             │
-│ 1. INICIAR TABULEIRO 3x3 & DESENHAR COM FOR ANINHADO        │
+│ 1. INICIAR TABULEIRO 3 x 3 & DESENHAR COM FOR ANINHADO      │
 │    Exibe e limpa o tabuleiro a cada nova rodada.            │
 │                                                             │
 │ 2. LEITURA & VALIDAÇÃO DA JOGADA                            │
